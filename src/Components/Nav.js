@@ -15,8 +15,13 @@ const Nav = () => {
           <Link to={"banner"} className="mx-3  py-2 px-4 btn-outline">
             Banner
           </Link>
-          <Link className="mx-3  py-2 px-4 btn-outline">Products</Link>
-          <Link className="mx-3  py-2 px-4 btn-outline">Contact Us</Link>
+          <Link to={"products"} className="mx-3  py-2 px-4 btn-outline">
+            Products
+          </Link>
+
+          <Link to={"contact"} className="mx-3  py-2 px-4 btn-outline">
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>
