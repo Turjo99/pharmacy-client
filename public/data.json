@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "COMET 500 MG Tab",
+    "price": 4,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/38178e25-771b-4e09-a260-f1bd6f60e479/COMET%20COMET%20500%20MG%20500%20MG%20Tab.webp",
+    "details": "Company:SQUARE PHARMACEUTICALS LIMITED Generic Name:METFORMINStrength:500 MG"
+  },
+  {
+    "id": 2,
+    "name": "CEEVIT",
+    "price": 20,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/61b8fb4a-3430-4aae-bbcd-bca84e815705/CEEVIT%20CEEVIT%20250MG%20250MG%20Tab.webp",
+    "details": "Company:SQUARE PHARMACEUTICALS LIMITED Generic Name:VITAMIN C Strength:250MG"
+  },
+  {
+    "id": 3,
+    "name": "SERGEL",
+    "price": 7,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/16148e56-e402-4a52-89d5-f9e7f8528dfc/SERGEL%20SERGEL%2020%20MG%2020%20MG%20Cap.webp",
+    "details": "Company:HEALTHCARE PHARMACEUTICALS LIMITED Generic Name:ESOMEPRAZOLE   Strength:20 MG"
+  },
+  {
+    "id": 4,
+    "name": "MULTIVIT PLUS",
+    "price": 60,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/cbfa52c4-c899-4ece-901d-6c99715178c3/MULTIVIT%20PLUS%20MULTIVIT%20PLUS%201%20POT%201%20POT%20Tab.webp",
+    "details": "Company:SQUARE PHARMACEUTICALS LIMITED Generic Name:MULTIVITAMIN+MULTIMINERAL Strength:1 POT"
+  },
+  {
+    "id": 5,
+    "name": "LOSECTIL V",
+    "price": 5,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/143672e9-1eb0-4dc9-8652-f0be9959c7fd/LOSECTIL%20V%20LOSECTIL%20V%2020MG%2020MG%20Cap.webp",
+    "details": "Company:TRANSCOM DISTRIBUTION COMPANY LTD(SK+F) "
+  },
+  {
+    "id": 6,
+    "name": "CLOFENAC",
+    "price": 40,
+    "img": "https://www.lazzpharma.com/Content/ImageData/Product/Orginal/18d79409-2316-460f-9b34-b4dac5fbc617/CLOFENAC%20%20CLOFENAC%20%20DICLOFENAC%20DIETHYL%20AMMONIUM%20SALT%2020GM%20Gel.webp",
+    "details": "Company:SQUARE PHARMACEUTICALS LIMITED "
+  }
+]
