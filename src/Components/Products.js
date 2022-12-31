@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const { data: products = [], refetch } = useQuery({
@@ -57,7 +58,9 @@ const Products = () => {
                 <p>{product.details} </p>
 
                 <div className="card-actions justify-end">
-                  <button className="btn bg-sky-700 text-white ">Edit</button>
+                  <button className="btn bg-sky-700 text-white ">
+                    <Link to={`product/${product._id}`}>Edit</Link>
+                  </button>
                   <button
                     onClick={() => handleDelete(product._id)}
                     className="btn  bg-red-600 text-white"
