@@ -8,7 +8,9 @@ const Products = () => {
     queryKey: ["products"],
     queryFn: async () => {
       try {
-        const res = await fetch(`http://localhost:5000/products`);
+        const res = await fetch(
+          `https://pharma-server-three.vercel.app/products`
+        );
         const data = await res.json();
         return data;
       } catch (error) {}
@@ -17,7 +19,7 @@ const Products = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Do you want to delete this product?");
     if (proceed) {
-      fetch(`http://localhost:5000/products/${id}`, {
+      fetch(`https://pharma-server-three.vercel.app/products/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -32,7 +34,7 @@ const Products = () => {
 
   // const [products, setProducts] = useState([]);
   // useEffect(() => {
-  //   fetch("http://localhost:5000/products")
+  //   fetch("https://pharma-server-three.vercel.app/products")
   //     .then((res) => res.json())
   //     .then((data) => setProducts(data));
   // }, []);

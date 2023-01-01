@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Extra = () => {
+  const [members, setMembers] = useState([]);
+  useEffect(() => {
+    fetch("https://pharma-server-three.vercel.app/members")
+      .then((res) => res.json())
+      .then((data) => setMembers(data));
+  }, []);
+  // [{},{},{}]
+  console.log(members);
   return (
     <div>
       <section class="bg-neutral my-5">
@@ -23,16 +31,16 @@ const Extra = () => {
             <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src={members[0]?.img}
                 alt=""
               />
 
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                arthur melo
+                {members[0]?.name}
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                design director
+                {members[0]?.work}
               </p>
 
               <div class="flex mt-3 -mx-2">
@@ -86,16 +94,16 @@ const Extra = () => {
             <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                src={members[1]?.img}
                 alt=""
               />
 
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                Pamela Anderson
+                {members[1]?.name}
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Lead Developer
+                {members[1]?.work}
               </p>
 
               <div class="flex mt-3 -mx-2">
@@ -149,16 +157,16 @@ const Extra = () => {
             <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
               <img
                 class="object-cover w-full rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src={members[2]?.img}
                 alt=""
               />
 
               <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                John Doe
+                {members[2]?.name}
               </h1>
 
               <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Full stack developer
+                {members[2]?.work}
               </p>
 
               <div class="flex mt-3 -mx-2">

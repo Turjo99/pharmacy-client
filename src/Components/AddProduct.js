@@ -17,7 +17,7 @@ const AddProduct = () => {
       img,
       details,
     };
-    fetch("http://localhost:5000/products", {
+    fetch("https://pharma-server-three.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

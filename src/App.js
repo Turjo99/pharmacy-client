@@ -41,13 +41,17 @@ function App() {
           path: "/product/:id",
           element: <Update></Update>,
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/product/${params.id}`),
+            fetch(
+              `https://pharma-server-three.vercel.app/product/${params.id}`
+            ),
         },
         {
           path: "/products/product/:id",
           element: <Update></Update>,
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/product/${params.id}`),
+            fetch(
+              `https://pharma-server-three.vercel.app/product/${params.id}`
+            ),
         },
       ],
     },
